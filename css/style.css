@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background-color: #fef2f2;
+  margin: 0;
+}
+
+header {
+  background-color: #fecaca;
+  padding: 2.5rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 33%;
+  padding: 4.6rem;
+  transition: right 0.2s ease-in-out;
+}
+
+main {
+  margin: 6rem 3rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #712fff;
+}
+
+main p {
+  font-size: 1.8rem;
+}
+
+.open {
+  right: 0;
+}
+
+.close-btn {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 6.6rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.logo {
+  color: #712fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 3.5rem;
+}
+
+ul li a {
+  font-size: 1.8rem;
+  color: #271c1c;
+}
+
+ul li a.active {
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #712fff;
+}
+
+a.cart {
+  display: flex;
+  background: #712fff;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+a.cart:hover {
+  background-color: #818cf8;
+}
+
+a.cart p {
+  margin: 0;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .close-btn,
+  .menu-btn {
+    display: none;
+  }
+  nav {
+    position: unset;
+    background: none;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  ul {
+    flex-direction: row;
+    gap: 4.6rem;
+  }
+}

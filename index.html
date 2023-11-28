@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شوپولو</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <div class="logo-menu">
+          <img src="./asset/menu-button.svg" class="menu-btn" alt="" />
+          <a href="#" class="logo">شوپولو</a>
+        </div>
+
+        <nav>
+          <img src="./asset/close-button.svg" class="close-btn" alt="" />
+          <ul>
+            <li><a href="#" class="active">خانه</a></li>
+            <li><a href="#">محصولات</a></li>
+            <li><a href="#">وبلاگ</a></li>
+            <li><a href="#">تعرفه ها</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="cart">
+          <p>سبد خرید</p>
+          <img src="./asset/cart-icon.svg" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <h1>همه زندگیم تو</h1>
+      <p>تو بهترین اتفاق همه زندگیم هستی</p>
+    </main>
+
+    <script>
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", function () {
+          document.querySelector("nav").classList.toggle("open");
+        });
+
+      document
+        .querySelector(".close-btn")
+        .addEventListener("click", function () {
+          document.querySelector("nav").classList.toggle("open");
+        });
+    </script>
+  </body>
+</html>
